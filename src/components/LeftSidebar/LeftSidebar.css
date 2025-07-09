@@ -1,0 +1,321 @@
+.ls {
+  background-color: rgba(255, 255, 255, 0.063);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+
+  /* background: #001030; */
+  color: white;
+  height: 100vh;
+  /* width: 360px; */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /* or any fixed width to see sidebar clearly */
+}
+
+.ls-top {
+  padding: 10px;
+}
+.ls-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ls-nav .logo-chat {
+  max-width: 140px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  margin-left: -10px;
+}
+.ls-nav .menu img {
+  max-height: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.ls-search {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  /* background-color: #002670; */
+  display: flex;
+  align-items: center;
+  /* gap: 10px; */
+  padding: 10px 12px;
+  margin-top: 20px;
+  margin-left: -12px;
+}
+
+.ls-search img {
+  width: 20px;
+  height: 20px;
+}
+
+.ls-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  flex: 1;
+  padding-left: 10px;
+}
+.ls-search input::placeholder {
+  color: #c8c8c8;
+}
+.ls-list {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  overflow-y: scroll;
+  font-size: larger;
+}
+.friends img {
+  width: 45px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.friends {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0px;
+  cursor: pointer;
+  font-size: 13px;
+  position: relative;
+}
+.friends div {
+  display: flex;
+  flex-direction: column;
+}
+.friends span {
+  color: #9f9f9f;
+  font-size: 11px;
+}
+/* .friends:hover {
+  background-color: darkmagenta;
+} */
+.friends:hover {
+  padding: 10px;
+  background-color: #000;
+  color: rgb(255, 0, 247);
+
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgb(46, 70, 208);
+  transition: 0.4s;
+}
+.friends:hover span {
+  color: white;
+}
+.ls-nav .menu {
+  position: relative;
+  padding: 10px 0px;
+}
+
+.menu .sub-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 140px;
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  border: 1px solid rgba(165, 122, 255, 0.4);
+  box-shadow: 0 0 12px rgba(165, 122, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  z-index: 10;
+  display: none;
+}
+
+.sub-menu hr {
+  border: none;
+  height: 1px;
+  background-color: #a4a4a4;
+  margin: 8px 0px;
+}
+.sub-menu p {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px;
+}
+.menu:hover .sub-menu {
+  display: block;
+  padding: 10px;
+  background-color: #000;
+
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.sub-menu p:hover {
+  background-color: #c4b6e3;
+  color: #000;
+  border-radius: 6px;
+  box-shadow: 0 0 12px #a57aff;
+}
+
+.ls-top {
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(127, 90, 240, 0.2);
+  margin-bottom: 16px;
+}
+
+.logo-chat p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #a57aff;
+}
+
+.ls-search {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(165, 122, 255, 0.3);
+  border-radius: 10px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.ls-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding-left: 10px;
+  font-size: 14px;
+  flex: 1;
+}
+.ls-search input::placeholder {
+  color: #cfcfcf;
+  opacity: 0.6;
+}
+
+.ls-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.friends {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.friends:hover {
+  background-color: rgba(165, 122, 255, 0.15);
+  box-shadow: 0 0 10px rgba(165, 122, 255, 0.4);
+  transform: scale(1.01);
+}
+
+.friends img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.friends span {
+  color: #aaa;
+  font-size: 12px;
+}
+
+/* Collapsed sidebar behavior */
+.ls.collapsed {
+  width: 70px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.ls.collapsed .logo-chat p,
+.ls.collapsed .menu .sub-menu,
+.ls.collapsed .ls-search input,
+.ls.collapsed .friends div {
+  display: none;
+}
+
+.ls.collapsed .logo-chat,
+.ls.collapsed .ls-search,
+.ls.collapsed .friends {
+  justify-content: center;
+  text-align: center;
+}
+
+.ls.collapsed .friends img {
+  margin: 0 auto;
+}
+
+.ls.collapsed .ls-search img {
+  margin: 0 auto;
+}
+
+.ls.collapsed .ls-search,
+.ls.collapsed .menu {
+  display: none;
+}
+@media (max-width: 900px) {
+  .ls {
+    width: 100%;
+  }
+}
+.friend-menu {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background: white;
+  border: 1px solid rgba(165, 122, 255, 0.4);
+  box-shadow: 0 0 12px rgba(165, 122, 255, 0.3);
+  border-radius: 8px;
+  padding: 6px 0;
+  z-index: 1000;
+  min-width: 120px;
+  pointer-events: auto;
+}
+
+.friend-menu p {
+  padding: 8px 12px;
+  font-size: 13px;
+  color:black;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.friend-menu p:hover {
+
+  color:purple;
+  scale: 1.1;
+}
+
+.friends {
+  position: relative;
+}
+.friends-options {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.friends-options button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.friends-options img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.7;
+}

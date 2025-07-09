@@ -1,0 +1,148 @@
+.login-page {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #0f0f0f;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  background: #111;
+}
+
+.login-logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #a57aff;
+  margin-bottom: 20px;
+}
+
+.login-header {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-subtext {
+  color: #c4c4c4;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-input {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #1e1e1e;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid #333;
+}
+
+.gradient-button {
+  background: linear-gradient(to right, #7f5af0, #ff6ac1);
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gradient-button:hover {
+  filter: brightness(1.1);
+}
+
+.login-alt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.google-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #222;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.login-footer {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-footer span {
+  color: #a57aff;
+  margin-left: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.login-right {
+  flex: 1;
+  position: relative;
+  background: #000;
+  overflow: hidden;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.login-overlay {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 2;
+  color: white;
+  max-width: 70%;
+}
+
+.quote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-size: 14px;
+  color: #ccc;
+}
+.google-button img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .login {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+}
