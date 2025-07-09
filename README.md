@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -10,3 +11,7 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+=======
+# ChattriX
+ChattriX is a real-time chat app built with React, Firebase, and WebRTC. It features live messaging, image and emoji support, Google auth, profile updates, video calling, user search, typing indicators, read receipts, and responsive UI. Firebase handles auth, storage, and realtime sync.
+>>>>>>> ec1b93ae6df927eca33a3bca59a2f950149664f6
