@@ -2,7 +2,7 @@
 
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Login from "./pages/login/Login.jsx";
-import Chat from "./pages/Chat/chat";
+import Chat from "./pages/Chat/Chat.jsx";
 import ProfileUpdate from "./pages/ProfileUpdate/ProfileUpdate";
 import { ToastContainer, toast } from "react-toastify";
 import { onAuthStateChanged } from "firebase/auth";
