@@ -1,7 +1,7 @@
 import { useContext, useMemo, useState } from "react";
 import assets from "../../assets/assets";
 import { logout } from "../../config/firebase";
-import "./RightSideBar.css";
+import "./RightSidebar.css";
 import { AppContext } from "../../context/AppContext";
 
 const RightSideBar = () => {
